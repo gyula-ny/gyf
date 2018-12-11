@@ -353,7 +353,7 @@ var GiveMeGyurcsany = function(numOfPars, senPerPar) {
 	for (var i=0; i<numOfPars; i++) {
 		var paragraph = "<p>";
 		for (var j=0; j<senPerPar; j++) {
-			paragraph = paragraph + Gyurcsany[ Math.floor((Math.random() * 281) + 1)] + " ";
+			paragraph = paragraph + Gyurcsany[ Math.floor(Math.random() * Gyurcsany.length)] + " ";
 		}
 		paragraph = paragraph + "</p>";
 		ret.push(paragraph);
